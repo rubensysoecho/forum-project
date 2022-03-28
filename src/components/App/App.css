@@ -1,0 +1,17 @@
+.hero {
+  background-image: url(../../images/hero-image.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero::before {
+  background-color: black;
+  opacity: 0.5;
+  content:"";
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
