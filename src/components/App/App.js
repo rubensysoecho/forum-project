@@ -1,3 +1,5 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -9,7 +11,7 @@ function App() {
         </header>
         <div className='hero__content'>
           <div className='hero__content__title'>WELCOME TO OUR FORUM!!</div>
-          
+          <div></div>
         </div>
       </div>
     </div>
