@@ -15,3 +15,17 @@
   top: 0;
   bottom: 0;
 }
+
+.hero__content {
+  font-size: xx-large;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__content__title {
+  position: relative;
+  align-items: center;
+  color: white;
+}
