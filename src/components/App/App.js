@@ -14,8 +14,8 @@ function App() {
             </nav>
           </header>
           <div className="hero__content">
-            <div className="hero__title">WELCOME TO OUR FORUM!!</div>
-            <div className="hero__subtitle">
+            <h1 className="hero__title">WELCOME TO OUR FORUM!!</h1>
+            <div className="hero__links">
               <NavLink to="/topics">Topics</NavLink>
               <NavLink to="/popular">Popular</NavLink>
               <NavLink to="/favorites">Favorites</NavLink>

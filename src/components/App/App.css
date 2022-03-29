@@ -34,10 +34,11 @@ header a:hover {
   background-size: cover;
   min-height: 100vh;
   position: relative;
+  z-index: 0;
 }
 
 .hero::before {
-  background-color: black;
+  background-color: #000;
   opacity: 0.5;
   content: "";
   position: absolute;
@@ -45,39 +46,37 @@ header a:hover {
   left: 0;
   top: 0;
   bottom: 0;
+  z-index: -1;
 }
 
 .hero__content {
-  font-size: xx-large;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .hero__title {
-  position: relative;
-  align-items: center;
+  font-size: 90px;
   color: white;
+  text-align: center;
 }
 
-.hero__subtitle {
+.hero__links {
   display: flex;
   justify-content: space-between;
-  position: fixed;
-  width: 500px;
-  top: 55vh;
   color: white;
-  font-size: large;
 }
 
-.hero__subtitle a {
+.hero__links a {
   color: white;
   text-decoration: none;
   transition: 0.4s;
+  font-size: 20px;
 }
 
-.hero__subtitle a:hover {
+.hero__links a:hover {
   text-decoration: underline;
   color: rgb(247, 187, 76);
 }
