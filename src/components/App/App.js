@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, HashRouter as Router } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -7,11 +7,22 @@ function App() {
     <div className='app'>
       <div className='hero'>
         <header>
-          
+          <Router>
+          <nav>
+              <NavLink to="#">Sign in</NavLink>
+              <NavLink to="#">Sign out</NavLink>
+          </nav>
+          </Router>
         </header>
         <div className='hero__content'>
           <div className='hero__content__title'>WELCOME TO OUR FORUM!!</div>
-          <div></div>
+          <Router>
+          <div className='hero__content__subtitle'>
+            <NavLink to="#">Topics</NavLink>
+            <NavLink to="#">Popular</NavLink>
+            <NavLink to="#">Favoritos</NavLink>
+          </div>
+          </Router>
         </div>
       </div>
     </div>

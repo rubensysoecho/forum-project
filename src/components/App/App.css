@@ -1,5 +1,32 @@
 header  {
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
 
+header nav  {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  width: 500px;
+  height: 50px;
+}
+
+header a  {
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 5px;
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover  {
+  border-color: black;
+  background-color: orange;
+  color: black;
 }
 
 .hero {
@@ -33,3 +60,26 @@ header  {
   align-items: center;
   color: white;
 }
+
+.hero__content__subtitle  {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 500px;
+  top: 55vh;
+  color: white;
+  font-size: large;
+}
+
+.hero__content__subtitle a {
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.hero__content__subtitle a:hover  {
+  text-decoration: underline;
+  color: rgb(247, 187, 76);
+}
+
+
