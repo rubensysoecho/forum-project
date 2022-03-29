@@ -4,28 +4,26 @@ import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <div className="hero">
-        <header>
-          <Router>
+    <Router>
+      <div className="app">
+        <div className="hero">
+          <header>
             <nav>
-              <NavLink to="#">Sign in</NavLink>
-              <NavLink to="#">Sign out</NavLink>
+              <NavLink to="/signin">Sign in</NavLink>
+              <NavLink to="/signup">Sign up</NavLink>
             </nav>
-          </Router>
-        </header>
-        <div className="hero__content">
-          <div className="hero__title">WELCOME TO OUR FORUM!!</div>
-          <Router>
+          </header>
+          <div className="hero__content">
+            <div className="hero__title">WELCOME TO OUR FORUM!!</div>
             <div className="hero__subtitle">
-              <NavLink to="#">Topics</NavLink>
-              <NavLink to="#">Popular</NavLink>
-              <NavLink to="#">Favoritos</NavLink>
+              <NavLink to="/topics">Topics</NavLink>
+              <NavLink to="/popular">Popular</NavLink>
+              <NavLink to="/favorites">Favorites</NavLink>
             </div>
-          </Router>
+          </div>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
