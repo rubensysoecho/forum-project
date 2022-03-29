@@ -8,20 +8,20 @@ function App() {
       <div className='hero'>
         <header>
           <Router>
-          <nav>
+            <nav>
               <NavLink to="#">Sign in</NavLink>
               <NavLink to="#">Sign out</NavLink>
-          </nav>
+            </nav>
           </Router>
         </header>
         <div className='hero__content'>
-          <div className='hero__content__title'>WELCOME TO OUR FORUM!!</div>
+          <div className='hero__title'>WELCOME TO OUR FORUM!!</div>
           <Router>
-          <div className='hero__content__subtitle'>
-            <NavLink to="#">Topics</NavLink>
-            <NavLink to="#">Popular</NavLink>
-            <NavLink to="#">Favoritos</NavLink>
-          </div>
+            <div className='hero__subtitle'>
+              <NavLink to="#">Topics</NavLink>
+              <NavLink to="#">Popular</NavLink>
+              <NavLink to="#">Favoritos</NavLink>
+            </div>
           </Router>
         </div>
       </div>

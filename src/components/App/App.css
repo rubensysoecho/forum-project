@@ -1,10 +1,10 @@
-header  {
+header {
   position: relative;
   display: flex;
   justify-content: right;
 }
 
-header nav  {
+header nav {
   display: flex;
   align-items: center;
   justify-content: right;
@@ -14,7 +14,7 @@ header nav  {
   height: 50px;
 }
 
-header a  {
+header a {
   padding: 5px;
   border: 1px solid white;
   border-radius: 10px;
@@ -23,7 +23,7 @@ header a  {
   text-decoration: none;
 }
 
-header a:hover  {
+header a:hover {
   border-color: black;
   background-color: orange;
   color: black;
@@ -39,7 +39,7 @@ header a:hover  {
 .hero::before {
   background-color: black;
   opacity: 0.5;
-  content:"";
+  content: "";
   position: absolute;
   right: 0;
   left: 0;
@@ -55,13 +55,13 @@ header a:hover  {
   align-items: center;
 }
 
-.hero__content__title {
+.hero__title {
   position: relative;
   align-items: center;
   color: white;
 }
 
-.hero__content__subtitle  {
+.hero__subtitle {
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -71,15 +71,13 @@ header a:hover  {
   font-size: large;
 }
 
-.hero__content__subtitle a {
+.hero__subtitle a {
   color: white;
   text-decoration: none;
   transition: 0.4s;
 }
 
-.hero__content__subtitle a:hover  {
+.hero__subtitle a:hover {
   text-decoration: underline;
   color: rgb(247, 187, 76);
 }
-
-
