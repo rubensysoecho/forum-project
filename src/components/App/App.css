@@ -74,9 +74,9 @@ header a:hover {
   text-decoration: none;
   transition: 0.4s;
   font-size: 20px;
+  padding-left: 15px;
 }
 
 .hero__links a:hover {
-  text-decoration: underline;
   color: rgb(247, 187, 76);
 }
