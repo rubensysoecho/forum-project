@@ -22,6 +22,19 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="topics">
+          <header>
+            <h1>TOPICS</h1>
+          </header>
+          <div className="topics__content">
+            <nav className="categories">
+              <NavLink to="#">GAMES</NavLink>
+              <NavLink to="#">MOVIES</NavLink>
+              <NavLink to="#">BOOKS</NavLink>
+              <NavLink to="#">HISTORY</NavLink>
+            </nav>
+          </div>
+        </div>
       </div>
     </Router>
   );
