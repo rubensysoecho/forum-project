@@ -1,0 +1,104 @@
+header
+  position: relative
+  display: flex
+  justify-content: right
+
+header nav
+  display: flex
+  align-items: center
+  justify-content: right
+  margin-top: 10px
+  margin-right: 20px
+  width: 500px
+  height: 50px
+
+header a
+  padding: 5px
+  border: 1px solid white
+  border-radius: 10px
+  margin: 5px
+  color: white
+  text-decoration: none
+
+header a:hover
+  border-color: black
+  background-color: orange
+  color: black
+
+.hero
+  background-image: url(../../images/hero-image.jpg)
+  background-size: cover
+  min-height: 100vh
+  position: relative
+  z-index: 0
+
+  &::before
+    background-color: #000
+    opacity: 0.5
+    content: ""
+    position: absolute
+    right: 0
+    left: 0
+    top: 0
+    bottom: 0
+    z-index: -1
+
+  &__content
+    height: 90vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+  &__title
+    font-size: 90px
+    color: white
+    text-align: center
+
+  &__links
+    display: flex
+    justify-content: space-between
+    color: white
+
+  &__links a
+    color: white
+    text-decoration: none
+    transition: 0.4s
+    font-size: 20px
+    padding-left: 15px
+
+  &__links a:hover
+    color: rgb(247, 187, 76)
+
+.topics
+  position: relative
+  background: #4261cf
+  background: -moz-linear-gradient(45deg, #3023ae 0%, #53a0fd 100%)
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #3023ae), color-stop(100%, #53a0fd))
+  background: -webkit-linear-gradient(45deg, #3023ae 0%, #53a0fd 100%)
+  background: -o-linear-gradient(45deg, #3023ae 0%, #53a0fd 100%)
+  background: -ms-linear-gradient(45deg, #3023ae 0%, #53a0fd 100%)
+  background: linear-gradient(45deg, #3023ae 0%, #53a0fd 100%)
+  /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradient-start', endColorstr='$gradient-end',GradientType=1 ); */
+  color: white
+  min-height: 100vh
+
+  & a
+    text-decoration: none
+    color: white
+
+  & header
+    justify-content: center
+
+  & header h1
+    padding: 20px
+    border-radius: 50px
+    border: 1px solid black
+
+.categories
+  display: flex
+  justify-content: center
+
+  & a
+    margin-left: 5px
+    margin-right: 5px
